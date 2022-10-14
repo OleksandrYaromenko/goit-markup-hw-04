@@ -8,13 +8,12 @@
   --footer-mail-tel-color: rgba(255, 255, 255, 0.6);
   --type-footer-logo: 'Raleway';
   --font-family-ronoto: 'Roboto', sans-serif;
-  --border-color:#ECECEC;
-
+  --border-color: #ececec;
+  --team-color-fon:rgba(47, 48, 58, 0.4);
 }
 .body {
   font-family: var(--font-family-ronoto);
   font-style: normal;
-  
 }
 h1,
 h2,
@@ -27,14 +26,10 @@ ul {
 /* HEADER */
 .header {
   border-bottom: 1px solid var(--border-color);
-;
-
 }
 .header-position {
   flex-grow: 3;
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+
 }
 .header-section {
   display: flex;
@@ -53,7 +48,6 @@ ul {
   list-style: none;
   display: flex;
   margin-left: 93px;
-  
 }
 .header-nav li {
   margin-right: 50px;
@@ -95,6 +89,20 @@ ul {
   display: flex;
   margin: 0 0 0 auto;
 }
+.header-contacts-svg{
+  content: "";
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+  
+}
+.header-contacts-img{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .header-contacts-link {
   display: block;
   padding-right: 30px;
@@ -109,14 +117,17 @@ ul {
 
 .main-title {
   padding-top: 200px;
-  /* height: 600px; */
-padding-bottom: 200px;
+  padding-bottom: 200px;
   background-color: var(--title-color);
+  background-image:linear-gradient(to right,var(--team-color-fon) , var(--team-color-fon) ), url(../images/team-worling.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
 }
 .title-h {
   text-transform: uppercase;
   text-align: center;
-  /* padding-top: 200px; */
   max-width: 696px;
   margin-top: 0;
   margin: 0 auto 30px;
@@ -173,8 +184,8 @@ padding-bottom: 200px;
   letter-spacing: 0.03em;
   color: var(--black-color);
 }
-.we-do{
-padding-top: 0px;
+.we-do {
+  padding-top: 0px;
 }
 
 .main-benefits-title {
@@ -194,7 +205,6 @@ padding-top: 0px;
   display: flex;
   gap: 30px;
   padding-top: 50px;
-
 }
 .main-team {
   background-color: var(--team-color);
@@ -220,7 +230,6 @@ padding-top: 0px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  
 }
 .main-team-position {
   padding: 0 0 30px 0;
@@ -255,10 +264,10 @@ padding-top: 0px;
   list-style: none;
   padding-bottom: 9px;
 }
-.footer-list:last-child{
+.footer-list:last-child {
   padding-bottom: 0;
 }
-.footer-address{
+.footer-address {
   padding-top: 20px;
 }
 
@@ -329,7 +338,7 @@ padding-top: 0px;
   color: var(--gray-color);
   letter-spacing: 0.03em;
 }
-.box-text{
+.box-text {
   border-left: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-right: 1px solid var(--border-color);
