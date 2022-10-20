@@ -57,10 +57,13 @@ ul{
 .header-nav li {
   margin-right: 50px;
 }
-
+/* .header-contacts-svg:hover, */
 .header-nav-link:hover,
 .header-contacts-link:hover {
   color: var(--blue-color);
+}
+.header-contacts-link:hover .header-contacts-svg{
+  fill: var(--blue-color);
 }
 
 .header-logo-web {
@@ -94,22 +97,21 @@ ul{
   display: flex;
   margin: 0 0 0 auto;
 }
-.header-contacts-span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .header-contacts-svg {
   margin-right: 10px;
   fill: var(--gray-color);
+  
 }
+
 .header-contacts-img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .header-contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding-right: 30px;
   text-decoration: none;
   font-size: 14px;
@@ -121,6 +123,8 @@ ul{
 /* MAIN*/
 
 .main-title {
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--title-color);
@@ -302,9 +306,10 @@ border-radius: 4px;
  
 }
 .footer-link {
+  display:block;
   font-style: normal;
   list-style: none;
-  padding-bottom: 20px;
+  margin-bottom: 15px;
   text-decoration: none;
   font-family: var(--type-footer-logo);
   font-size: 26px;
@@ -374,6 +379,7 @@ background-color: var(--blue-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .footer-title{
   margin-bottom: 20px;
@@ -406,6 +412,8 @@ color: var(--white-color);
 .portfolio-button-list:hover {
   color: var(--white-color);
   background-color: var(--blue-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
 }
 .main-portfolio-list {
   padding-top: 34px;
